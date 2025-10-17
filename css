@@ -1,0 +1,172 @@
+/* Basic reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Header styles */
+.main-header {
+    background-color: #002C5F;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.top-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Secondary navigation */
+.secondary-nav {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.secondary-nav a {
+    color: #002C5F;
+    text-decoration: none;
+}
+
+.secondary-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main container */
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Grid layout for content */
+.content-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 20px;
+}
+
+/* Left sidebar */
+.left-sidebar {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.left-sidebar h2 {
+    color: #002C5F;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Center content */
+.center-content {
+    /* No specific styling needed for wrapper */
+}
+
+.hero-section {
+    background-color: #002C5F;
+    color: white;
+    padding: 80px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content-box {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+/* Right sidebar */
+.right-sidebar {
+    /* No specific styling for wrapper */
+}
+
+.sidebar-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar-box h2 {
+    color: #002C5F;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Header styles for different levels */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002C5F;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .left-sidebar,
+    .right-sidebar {
+        margin-bottom: 20px;
+    }
+}
